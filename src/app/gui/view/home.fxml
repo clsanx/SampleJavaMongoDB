@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="300.0" maxWidth="400.0" minHeight="300.0" minWidth="400.0" prefHeight="300.0" prefWidth="400.0" styleClass="anchor-pane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="app.gui.controller.HomeController">
+   <children>
+      <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox alignment="CENTER" layoutX="150.0" layoutY="40.0" maxWidth="100.0" minWidth="100.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="130.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Button fx:id="btnFacturas" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#loadFacturas" prefWidth="100.0" text="Facturas" />
+            <Button fx:id="btnClientes" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#loadClientes" prefWidth="100.0" text="Clientes" />
+            <Button fx:id="btnServicios" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#loadServicios" prefWidth="100.0" text="Servicios" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" maxHeight="600.0" maxWidth="700.0" minHeight="600.0" minWidth="700.0" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.gui.controller.factura.FacturaMainController">
+   <children>
+      <Pane maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" text="GESTIÓN DE FACTURAS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+      <TableView fx:id="tvFacturas" layoutX="34.0" layoutY="48.0" prefHeight="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
+        <columns>
+            <TableColumn fx:id="tcId" maxWidth="1000.0" prefWidth="100.0" text="ID" />
+          <TableColumn fx:id="tcIdCliente" maxWidth="1000.0" prefWidth="110.0" text="CLIENTE" />
+          <TableColumn fx:id="tcServicios" maxWidth="1000.0" prefWidth="218.0" text="SERVICIOS" />
+            <TableColumn fx:id="tcDate" maxWidth="1000.0" prefWidth="110.0" text="FECHA" />
+            <TableColumn fx:id="tcTotal" maxWidth="1000.0" prefWidth="120.0" text="TOTAL" />
+        </columns>
+      </TableView>
+      <HBox alignment="TOP_RIGHT" maxHeight="28.0" minHeight="28.0" prefHeight="28.0" prefWidth="200.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Button fx:id="btnAdd" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" prefWidth="70.0" text="Crear" />
+            <Button fx:id="btnUpdate" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" prefWidth="70.0" text="Modificar" />
+            <Button fx:id="btnDelete" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" prefWidth="70.0" text="Eliminar" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
